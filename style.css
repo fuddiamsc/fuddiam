@@ -1,0 +1,220 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF6600;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF6600;
+}
+
+/* Header */
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hero */
+.hero {
+    background-color: #F5F5F5;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #666666;
+}
+
+.hero .btn {
+    margin-top: 20px;
+}
+
+/* Secciones */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Programas */
+.programas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.programa {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.programa h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.programa p {
+    font-size: 16px;
+}
+
+/* Contacto */
+.contacto {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacto ul li {
+    margin-bottom: 10px;
+}
+
+.contacto a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contacto a:hover {
+    color: #FF6600;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .programas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto {
+        padding: 20px 0;
+    }
+
+    .contacto h2 {
+        font-size: 24px;
+    }
+
+    .contacto p {
+        font-size: 16px;
+    }
+}
