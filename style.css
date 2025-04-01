@@ -1,50 +1,41 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-p {
     line-height: 1.6;
-    margin-bottom: 20px;
+    color: #333;
+    background-color: #fff; /* Fondo blanco para la página */
 }
 
-a {
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-a:hover {
-    color: #FF6600;
+.section {
+    padding: 60px 0;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+.bg-light {
+    background-color: #f9f9f9;
 }
 
-.btn:hover {
-    background-color: #FF6600;
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
 }
 
 /* Header */
 header {
-    background-color: #333333;
-    color: white;
-    padding: 20px;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header .container {
@@ -54,8 +45,7 @@ header .container {
 }
 
 header .logo img {
-    width: 150px;
-    height: auto;
+    height: 50px;
 }
 
 header nav ul {
@@ -70,160 +60,324 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-/* Hero */
-.hero {
-    background-color: #F5F5F5;
-    padding: 100px 0;
-    text-align: center;
+header nav ul li a:hover {
+    color: #007bff;
 }
 
-.hero h1 {
-    font-size: 48px;
+.donar-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.donar-btn:hover {
+    background-color: #0056b3;
+}
+
+.donar-btn.large {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+#banner.hero {
+    background-color: #e9ecef;
+    padding: 80px 0;
+}
+
+#banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.hero p {
-    font-size: 24px;
-    color: #666666;
+.hero-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
 }
 
-.hero .btn {
-    margin-top: 20px;
+.hero-image {
+    flex: 1;
 }
 
-/* Secciones */
-.section {
-    padding: 50px 0;
-}
-
-.section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.section p {
-    font-size: 18px;
-}
-
-.section img {
+.hero-image img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-/* Programas */
-.programas-grid {
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+/* Proyectos Section */
+#proyectos .proyectos-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.programa {
-    background-color: #FFFFFF;
-    border-radius: 10px;
+.proyecto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.programa h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.programa p {
-    font-size: 16px;
-}
-
-/* Contacto */
-.contacto {
-    background-color: #F5F5F5;
-    padding: 50px 0;
     text-align: center;
 }
 
-.contacto h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
-.contacto p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.contacto ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contacto ul li {
+.proyecto h3 {
     margin-bottom: 10px;
+    color: #444;
 }
 
-.contacto a {
-    color: #007BFF;
-    text-decoration: none;
-    transition: color 0.3s;
+.proyecto p {
+    color: #777;
+    margin-bottom: 15px;
 }
 
-.contacto a:hover {
-    color: #FF6600;
+/* Noticias Section */
+#noticias .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.noticia {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.noticia h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.noticia p {
+    color: #777;
+}
+
+/* Voluntariado Section */
+#voluntariado p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#voluntariado .btn-primary {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+/* Donaciones Section */
+#donaciones p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#donaciones .donar-btn.large {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Contacto Section */
+#contacto .contacto-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contacto .contacto-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#contacto .formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contacto .formulario-contacto input,
+#contacto .formulario-contacto textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto .formulario-contacto textarea {
+    min-height: 150px;
+}
+
+#contacto .formulario-contacto button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#contacto .formulario-contacto button[type="submit"]:hover {
+    background-color: #1e7e34;
 }
 
 /* Footer */
 footer {
-    background-color: #333333;
-    color: white;
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
     text-align: center;
 }
 
-footer p {
-    font-size: 14px;
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Responsivo */
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 20px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
-        padding: 50px 0;
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .hero h1 {
-        font-size: 36px;
+    header .logo {
+        margin-bottom: 15px;
     }
 
-    .hero p {
-        font-size: 20px;
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .programas-grid {
-        grid-template-columns: 1fr;
+    header nav ul li {
+        margin: 10px 0;
     }
 
-    .contacto {
-        padding: 20px 0;
+    #banner .container {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .contacto h2 {
-        font-size: 24px;
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
     }
 
-    .contacto p {
-        font-size: 16px;
+    #proyectos .proyectos-grid,
+    #noticias .noticias-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
     }
-    .redes-sociales a {
-    display: inline-block;
-    margin-right: 10px;
-  }
 
-  .redes-sociales img {
-    width: 30px;
-    height: 30px;
-  }
+    .contacto-info {
+        text-align: left;
+    }
+
+    .formulario-contacto {
+        max-width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin: 10px 0;
+    }
 }
