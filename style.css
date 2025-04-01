@@ -217,4 +217,13 @@ footer p {
     .contacto p {
         font-size: 16px;
     }
+    .redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .redes-sociales img {
+    width: 30px;
+    height: 30px;
+  }
 }
