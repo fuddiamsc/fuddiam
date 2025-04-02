@@ -324,7 +324,125 @@ footer nav ul li a:hover {
     color: #fff;
 }
 
-/* Responsive Design */
+/* Estilos para la sección de redes sociales */
+#redes-sociales {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#redes-sociales h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#redes-sociales p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.redes-sociales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.red-social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.red-social-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.red-social-item i {
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.red-social-item span {
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+/* Colores específicos para cada red social */
+.red-social-item.facebook .icon-wrapper {
+    background-color: #1877f2;
+}
+
+.red-social-item.facebook i {
+    color: white;
+}
+
+.red-social-item.instagram .icon-wrapper {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.red-social-item.instagram i {
+    color: white;
+}
+
+.red-social-item.twitter .icon-wrapper {
+    background-color: #1da1f2;
+}
+
+.red-social-item.twitter i {
+    color: white;
+}
+
+.red-social-item.whatsapp .icon-wrapper {
+    background-color: #25d366;
+}
+
+.red-social-item.whatsapp i {
+    color: white;
+}
+
+.red-social-item.youtube .icon-wrapper {
+    background-color: #ff0000;
+}
+
+.red-social-item.youtube i {
+    color: white;
+}
+
+/* Efectos hover */
+.red-social-item:hover .icon-wrapper {
+    transform: scale(1.1);
+}
+
+.red-social-item:hover span {
+    color: #007bff;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -379,5 +497,27 @@ footer nav ul li a:hover {
 
     footer nav ul li {
         margin: 10px 0;
+    }
+
+    .redes-sociales-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .red-social-item {
+        padding: 1.5rem;
+    }
+
+    .icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .red-social-item i {
+        font-size: 1.5rem;
+    }
+
+    .red-social-item span {
+        font-size: 1rem;
     }
 }
