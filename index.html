@@ -12,15 +12,13 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body style="background: url('background-inicio.jpeg') no-repeat center center fixed; background-size: cover;">
 
     <!-- Header Section -->
     <header class="site-header sticky">
         <div class="container header-container">
             <div class="logo">
-                <!-- Replace with actual logo if available -->
-                <a href="#">FUDDIAM</a>
-                <a href="#"><img src="fuddiam-logo.jpg" alt="FUDDIAM Logo"></a> 
+               <a href="#"><img src="Logo-fuddiam.jpg" alt="FUDDIAM Logo" width="90" height="80" style="border-radius: 50%;"></a> 
             </div>
             <nav class="main-nav">
                 <ul class="nav-links">
@@ -28,17 +26,11 @@
                     <li><a href="#quienes-somos">Quiénes Somos</a></li>
                     <li><a href="#que-hacemos">Qué Hacemos</a></li>
                     <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-            <!-- Header Actions
-            <div class="header-actions">
-                 <a href="#donar" class="btn btn-primary">Donar</a>
-                 <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
-                    <i class="fas fa-bars"></i>
-                 </button>
-            </div>
-             -->
+          
         </div>
     </header>
 
@@ -52,14 +44,14 @@
             <li><a href="#quienes-somos">Quiénes Somos</a></li>
             <li><a href="#que-hacemos">Qué Hacemos</a></li>
             <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#eventos">Eventos</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#donar" class="btn btn-primary">Donar</a></li>
         </ul>
     </nav>
     <div class="mobile-nav-overlay"></div>
-
-
     <main>
+
         <!-- Hero Section -->
         <section id="inicio" class="hero-section">
             <div class="hero-content container">
@@ -166,7 +158,34 @@
                 <a href="#contacto" class="btn btn-outline-light btn-lg">Sé Voluntario</a>
             </div>
         </section>
-
+        <!-- Eventos Section -->
+        <section id="eventos" class="content-section">
+            <div class="container">
+                <h2>Eventos</h2>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0098.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0100.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0101.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0103.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0104.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0105.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0106.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0107.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
+                        <video controls class="responsive-video">
+                            <source src="https://github.com/fuddiamsc/fuddiam/blob/main/VID-20250404-WA0135.mp4?raw=true" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                        <!--
+                        <img src="evento2.jpg" alt="Evento 2">
+                        <img src="evento3.jpg" alt="Evento 3">
+                    -->
+                    </div>
+                    <button class="carousel-button prev" aria-label="Anterior">&#10094;</button>
+                    <button class="carousel-button next" aria-label="Siguiente">&#10095;</button>
+                </div>
+            </div>
+        </section>
         <!-- Contact Section -->
         <section id="contacto" class="content-section">
             <div class="container">
@@ -174,10 +193,10 @@
                 <div class="contact-content">
                     <div class="contact-info">
                         <h3>Ponte en contacto</h3>
-                        <p>Si tienes preguntas, necesitas ayuda o quieres colaborar, no dudes en escribirnos o llamarnos.</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Haina, San Cristobal, República Dominicana</p>
-                        <p><i class="fas fa-phone"></i> +1.809.512.2377</p>
-                        <p><i class="fas fa-envelope"></i> fuddiamsc@gmail.com</p>
+                        <p style="color: white;">Si tienes preguntas, necesitas ayuda o quieres colaborar, no dudes en escribirnos o llamarnos.</p>
+                        <p style="color: white;"><i class="fas fa-map-marker-alt"></i> Haina, San Cristobal, República Dominicana</p>
+                        <p style="color: white;"><i class="fas fa-phone"></i> +1.809.512.2377</p>
+                        <p style="color: white;"><i class="fas fa-envelope"></i> fuddiamsc@gmail.com</p>
                          <div class="social-links">
                             <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61574650739876" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -236,7 +255,7 @@
                     <li><a href="#quienes-somos">Quiénes Somos</a></li>
                     <li><a href="#que-hacemos">Qué Hacemos</a></li>
                     <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#donar">Donar</a></li>
+                    <li><a href="#eventos">Evento</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#">Política de Privacidad</a></li>
                 </ul>
@@ -254,5 +273,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

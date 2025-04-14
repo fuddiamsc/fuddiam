@@ -1,22 +1,23 @@
-// js/main.js
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
+const carousel = document.querySelector('.carousel-images');
+const images = document.querySelectorAll('.carousel-images img');
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
 
-  toggle?.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
+let currentIndex = 0;
 
-  // Newsletter popup
-  setTimeout(() => {
-    const popup = document.getElementById('newsletterPopup');
-    if (popup) popup.classList.remove('hidden');
-  }, 5000); // show after 5s
+function updateCarousel() {
+    const width = images[0].clientWidth;
+    carousel.style.transform = `translateX(-${currentIndex * width}px)`;
+}
 
-  // Close modal
-  document.querySelectorAll('.closeModal').forEach(btn =>
-    btn.addEventListener('click', () => {
-      btn.closest('.modal')?.classList.add('hidden');
-    })
-  );
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateCarousel();
 });
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
