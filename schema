@@ -1,0 +1,15 @@
+elder-ngo-website/
+├── index.html
+├── about.html
+├── programs.html
+├── resources.html
+├── news.html
+├── get-involved.html
+├── contact.html
+├── css/
+│   └── style.css (optional for custom styles)
+├── js/
+│   └── main.js
+└── assets/
+    ├── images/
+    └── icons/
