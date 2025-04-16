@@ -31,7 +31,10 @@
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
-          
+            <!-- Botón de menú para móviles -->
+            <button class="mobile-nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -163,7 +166,9 @@
         <section id="eventos" class="content-section">
             <div class="container">
                 <h2>Eventos</h2>
-                <div class="carousel">
+                <div class="carousel"> 
+                    <button class="carousel-button prev" aria-label="Anterior">&#10094;</button>
+                    <button class="carousel-button next" aria-label="Siguiente">&#10095;</button>
                     <div class="carousel-images">
                         <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0098.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
                         <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0100.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
@@ -173,20 +178,19 @@
                         <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0105.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
                         <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0106.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
                         <img src="https://github.com/fuddiamsc/fuddiam/blob/main/IMG-20250404-WA0107.jpg?raw=true" alt="Envento entre envejecientes" class="responsive-img">
-                        <video controls class="responsive-video">
-                            <source src="https://github.com/fuddiamsc/fuddiam/blob/main/VID-20250404-WA0135.mp4?raw=true" type="video/mp4">
-                            Tu navegador no soporta la reproducción de video.
-                        </video>
-                        <!--
-                        <img src="evento2.jpg" alt="Evento 2">
-                        <img src="evento3.jpg" alt="Evento 3">
-                    -->
-                    </div>
-                    <button class="carousel-button prev" aria-label="Anterior">&#10094;</button>
-                    <button class="carousel-button next" aria-label="Siguiente">&#10095;</button>
+                 </div>
+               
                 </div>
             </div>
         </section>
+        <!-- Video Section 
+        <div class="video-container">
+            <video controls class="responsive-video">
+                <source src="https://github.com/fuddiamsc/fuddiam/blob/main/VID-20250404-WA0135.mp4?raw=true" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+        -->
         <!-- Contact Section -->
         <section id="contacto" class="content-section">
             <div class="container">
