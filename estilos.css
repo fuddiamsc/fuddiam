@@ -630,9 +630,16 @@ ul {
 
 /* --- Footer --- */
 .site-footer {
+    /*
     background-color: var(--primary-color);
     color: rgba(255, 255, 255, 0.8);
     padding-top: 60px;
+    */
+    font-family: 'Poppins', sans-serif; /* Ensure consistent font */
+    color: white; /* Set text color to white */
+    background-color: #333; /* Optional: Dark background for contrast */
+    padding: 20px 0;
+    
 }
 
 .footer-container {
@@ -648,6 +655,8 @@ ul {
     font-size: 1.2rem;
     position: relative;
     padding-bottom: 10px;
+    font-weight: 600; /* Bold font for headings */
+    margin-bottom: 10px;
 }
 
 .site-footer h4::after {
@@ -1026,4 +1035,45 @@ ul {
 .btn:hover {
     background-color: #365899;
     /* Darker Facebook blue */
+}
+.email-link {
+    font-family: 'Poppins', sans-serif; /* Ensure consistent font */
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+.email-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #ccc; /* Optional: Change color on hover */
+}
+
+.site-footer p, 
+.site-footer a {
+    color: white; /* Ensure all text and links are white */
+    font-size: 14px; /* Adjust font size if needed */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.site-footer a:hover {
+    text-decoration: underline; /* Add underline on hover for links */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ccc; /* Optional: Lighter color for copyright text */
 }
