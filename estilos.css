@@ -93,7 +93,7 @@ ul {
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .bg-light {
@@ -262,7 +262,7 @@ ul {
     background-color: #fff;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     z-index: 1002;
-    padding: 60px 20px 20px;
+    padding: 60px 30px 30px;
     transition: right 0.4s ease-in-out;
     overflow-y: auto;
 }
@@ -322,7 +322,7 @@ ul {
 }
 
 .mobile-nav .btn {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
 }
 
@@ -445,12 +445,12 @@ ul {
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .service-icon {
     color: var(--secondary-color);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .service-card h3 {
@@ -483,7 +483,7 @@ ul {
 }
 
 .news-content {
-    padding: 20px;
+    padding: 30px;
     flex-grow: 1;
     /* Allows content to fill space */
     display: flex;
@@ -556,7 +556,7 @@ ul {
 }
 
 .contact-info h3 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contact-info p {
@@ -568,7 +568,7 @@ ul {
 
 .contact-info i {
     color: var(--secondary-color);
-    width: 20px;
+    width: 30px;
     /* Align icons */
     text-align: center;
 }
@@ -591,11 +591,11 @@ ul {
 }
 
 .contact-form h3 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .form-group label {
@@ -644,7 +644,7 @@ ul {
 
 .site-footer h4 {
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 1.2rem;
     position: relative;
     padding-bottom: 10px;
@@ -713,7 +713,7 @@ ul {
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -780,9 +780,45 @@ ul {
 
     .mobile-nav-toggle {
         display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
         /* Show hamburger */
     }
 
+    /* Mostrar el menú cuando esté activo */
+    .main-nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+    }
+
+    main-nav.active .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main-nav.active .nav-links li {
+        margin: 10px 0;
+    }
+    
+    /* Asegurar que el menú sea visible en pantallas grandes */
+    @media (min-width: 768px) {
+        .main-nav {
+            display: flex;
+        }
+    
+        .mobile-nav-toggle {
+            display: none;
+        }
+    }
     .header-actions .btn {
         display: none;
         /* Optionally hide donate button in header on mobile */
@@ -831,7 +867,7 @@ ul {
     }
 
     .btn {
-        padding: 8px 20px;
+        padding: 8px 30px;
         font-size: 0.9rem;
     }
 
@@ -944,7 +980,7 @@ ul {
 
 .carousel-button {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -955,15 +991,15 @@ ul {
 }
 
 .carousel-button.prev {
-    left: 10px;
+    left: 30px;
 }
 
 .carousel-button.next {
-    right: 10px;
+    right: 30px;
 }
 
 .carousel {
-    max-width: 80%;
+    max-width: 100%;
     /* Make the carousel responsive */
 }
 
@@ -976,7 +1012,7 @@ ul {
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 16px;
     color: #fff;
     background-color: #4267B2;
